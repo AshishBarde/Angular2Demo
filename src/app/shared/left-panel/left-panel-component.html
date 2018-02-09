@@ -1,0 +1,9 @@
+<md-sidenav #sidenav mode="side" class="app-sidenav left-panel">
+    <md-nav-list>
+        <div class="mdl-cell mdl-cell--12-col left-panel-list" *ngFor="let menu of menus">
+            <a [routerLink]="menu.link" routerLinkActive="router-link-active">        
+                <span class="text13">{{menu.name}}</span>                
+            </a>
+        </div>
+    </md-nav-list>
+</md-sidenav>

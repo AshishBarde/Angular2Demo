@@ -1,0 +1,69 @@
+
+<div class="login-page-bg"> </div>
+<div class="login">
+    <div class="mdl-cell mdl-cell--12-col">
+
+
+<div class="wrapper-lg">
+
+
+    <div class="text-center">
+<div class="login-info">
+    <form #loginForm="ngForm" novalidate>
+        <div class="mdl-grid has-feedback nopaddong">
+            <div class="mdl-cell mdl-cell--12-col  margB0">
+                <label></label>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+                <div class="home-input">
+                    <input class="login-input" type="text" tabindex="0" placeholder="Enter User Name" [(ngModel)]="loginRequest.loginName"
+                        name="loginName" #loginName="ngModel" autocomplete="off" required maxlength="50" />
+                </div>
+                <div *ngIf="loginName.errors && (loginName.dirty || loginName.touched)">
+                    <div [hidden]="!loginName.errors.required" class="error-notify">
+                       login requierd
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-grid has-feedback nopaddong" style="margin-top: 15px;">
+<div class="mdl-cell mdl-cell--12-col  margB0">
+    <label>Password</label>
+</div>
+<div class="mdl-cell mdl-cell--12-col margT0">
+    <div class="home-input">
+        <input class="login-input" type="password" tabindex="0" placeholder="Enter Password" [(ngModel)]="loginRequest.password"
+            name="password" #password="ngModel" autocomplete="off" required maxlength="50">
+    </div>
+    <div *ngIf="password.errors && (password.dirty || password.touched)">
+        <div [hidden]="!password.errors.required" class="error-notify">
+            password required
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="mdl-grid has-feedback nopaddong">
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="home-input">
+            <mat-checkbox tabindex="0" class="example-margin"><span class="margL10"> Remember Password </span></mat-checkbox>
+        </div>
+    </div>
+</div>
+<div class="mdl-grid has-feedback nopaddong">
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="text-right">
+            <button class="mdl-button mdl-js-button mdl-button--raised myBtn" tabindex="0" [disabled]="!loginForm.form.valid" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
+
+</form>
+</div>
+</div>
+<div class="mdl-grid login-page-footer" style="position: absolute;width: 100%;bottom: 5%;   ">
+<div class="l-footer text-left padding45 remove-padd" style="position: absolute; top: initial;">
+<!--<p>{{'logincomponent.needanaccount'|translate}}? <a href="register.html">{{'logincomponent.register'|translate}}</a></p>-->
+</div>
+</div>
+</div>

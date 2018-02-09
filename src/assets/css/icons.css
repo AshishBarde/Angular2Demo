@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?iecu1v');
+  src:  url('../fonts/icomoon.eot?iecu1v#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?iecu1v') format('truetype'),
+    url('../fonts/icomoon.woff?iecu1v') format('woff'),
+    url('../fonts/icomoon.svg?iecu1v#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-info:before {
+  content: "\e923";
+}
+.icon-logout:before {
+  content: "\e924";
+}
+.icon-settings:before {
+  content: "\e925";
+}
+.icon-calendar:before {
+  content: "\e922";
+}
+.icon-benefit-master:before {
+  content: "\e900";
+}
+.icon-cancel:before {
+  content: "\e901";
+}
+.icon-carrier-master:before {
+  content: "\e902";
+}
+.icon-coverage-master:before {
+  content: "\e903";
+}
+.icon-dashboard:before {
+  content: "\e904";
+}
+.icon-deduction-code:before {
+  content: "\e905";
+}
+.icon-delete:before {
+  content: "\e906";
+}
+.icon-disable:before {
+  content: "\e907";
+}
+.icon-download:before {
+  content: "\e908";
+}
+.icon-duplicate:before {
+  content: "\e909";
+}
+.icon-edi:before {
+  content: "\e90a";
+}
+.icon-edit:before {
+  content: "\e90b";
+}
+.icon-employee-master:before {
+  content: "\e90c";
+}
+.icon-employee-type:before {
+  content: "\e90d";
+}
+.icon-enrollment-master:before {
+  content: "\e90e";
+}
+.icon-enrollment-status:before {
+  content: "\e90f";
+}
+.icon-eoi:before {
+  content: "\e910";
+}
+.icon-facility-master:before {
+  content: "\e911";
+}
+.icon-icons:before {
+  content: "\e912";
+}
+.icon-job-class:before {
+  content: "\e913";
+}
+.icon-legal-entity:before {
+  content: "\e914";
+}
+.icon-ok-active:before {
+  content: "\e915";
+}
+.icon-payroll-master:before {
+  content: "\e916";
+}
+.icon-pdf:before {
+  content: "\e917";
+}
+.icon-plan-master:before {
+  content: "\e918";
+}
+.icon-print:before {
+  content: "\e919";
+}
+.icon-qle-master:before {
+  content: "\e91a";
+}
+.icon-qle-request:before {
+  content: "\e91b";
+}
+.icon-rate-master:before {
+  content: "\e91c";
+}
+.icon-reports:before {
+  content: "\e91d";
+}
+.icon-resource-library:before {
+  content: "\e91e";
+}
+.icon-search:before {
+  content: "\e91f";
+}
+.icon-view:before {
+  content: "\e920";
+}
+.icon-view-attachment:before {
+  content: "\e921";
+}
+
+
