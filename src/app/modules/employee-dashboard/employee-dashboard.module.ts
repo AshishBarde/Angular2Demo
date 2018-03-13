@@ -1,3 +1,5 @@
+import { DialogParameterComponent } from './dialog-parameter.component';
+import { ConfirmationDailog } from './../../dialogs/custome.dialog';
 import { EmployeeDashboardRoutingModule } from './employee-dashboard.routing';
 import { MaterialModules } from './../material-module/material.module';
 
@@ -21,16 +23,22 @@ import { HttpModule, Http } from '@angular/http';
     EmployeeDashboardRoutingModule
   ],
   declarations: [
+    ConfirmationDailog,
+    DialogParameterComponent,
     EmployeeDashoboardComponent,
   ],
   exports: [
+    ConfirmationDailog,
+    DialogParameterComponent,
     EmployeeDashoboardComponent,
   ],
   entryComponents: [
-   EmployeeDashoboardComponent
+   EmployeeDashoboardComponent,
+   ConfirmationDailog,
+   DialogParameterComponent
   ],
   providers: [
-    
+    DialogParameterComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
