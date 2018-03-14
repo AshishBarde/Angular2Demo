@@ -1,3 +1,4 @@
+import { EnumExample } from './../../enums/enum';
 import { DialogParameterComponent } from './../employee-dashboard/dialog-parameter.component';
 import { MatDialog,MatDialogRef, MatDialogConfig  } from '@angular/material';
 import { ConfirmationDailog } from './../../dialogs/custome.dialog';
@@ -18,7 +19,7 @@ export class EmployeeDashoboardComponent implements OnInit
     constructor(private dialog:MatDialog){
 
     }
-    
+
     ngOnInit()
     {
 
@@ -32,7 +33,7 @@ export class EmployeeDashoboardComponent implements OnInit
        this.dialogRef.afterClosed().subscribe(result=>{
         console.log(result);
        })
-       this.dialogRef.componentInstance.message="You Click On Button";
+       this.dialogRef.componentInstance.message="You Click On Button" + EnumExample.DEFAULT.toString();
     }
 
     showCustomeDialog()
